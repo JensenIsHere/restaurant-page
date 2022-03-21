@@ -33,4 +33,23 @@ for an index.html in the root directory of your project.
   settings.
 */
 
-alert("Working!")
+import createHomeTab from './home-tab';
+import createMenuTab from './menu-tab';
+
+function nukePage() {
+  document.querySelector('.content').innerHTML = "";
+}
+
+document.querySelector('.content').appendChild(createHomeTab());
+
+document.addEventListener('click', function(e) {
+  console.log(e);
+  if(e.target.innerHTML == "Home") {
+    nukePage();
+    document.querySelector('.content').appendChild(createHomeTab());
+  }
+  else if(e.target.innerHTML == "Menu") {
+    nukePage();
+    document.querySelector('.content').appendChild(createMenuTab());
+  }
+});
