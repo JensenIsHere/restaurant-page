@@ -1,0 +1,114 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /*border: 2px solid red;*/
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+header, footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(176, 2, 199);
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.logo_header {
+  position: relative;
+  top: 12px;
+  flex: 0 0 auto;
+  align-self: flex-start;
+  width: 300px;
+}
+
+div.tabs {
+  display: inline-block;
+  height: 24px;
+  padding: 16px;
+  margin: 0 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(110, 199, 2);
+  cursor: pointer;
+}
+
+div.tabs:hover {
+  color: #fff;
+  background-color: rgb(108, 1, 122);
+  font-weight: 800;
+}
+
+.main {
+  width: 800px;
+  margin: auto;
+}
+
+.intro {
+  display: flex;
+}
+
+.text_button {
+  display: grid;
+  grid-template-rows: 30% 45% 25%;
+  margin: 0 8px;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tagline {
+  grid-row: 1 / 2;
+  font-size: 2.4rem;
+  display: block;
+  margin: 0;
+}
+
+.tagtext {
+  grid-row: 2 / 3;
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin: 10px 0 0 0;
+}
+
+.response_button {
+  grid-row: 3 / 4;
+  font-size: 1.3rem;
+  color: rgb(110, 199, 2);
+  padding: 6px 20px;
+  border: 2px solid rgb(110, 199, 2);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.response_button:hover {
+  border: 3px solid rgb(110, 199, 2);
+  font-weight: 500;
+}
+
+.logo {
+  width: 800px;
+  height: 107px;
+  margin: 100px 0 40px;
+}
+
+img {
+  width: 100%;
+}
+
+.copy_text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+.footer_text {
+  color: #fff;
+}
