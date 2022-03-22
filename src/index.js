@@ -33,8 +33,8 @@ for an index.html in the root directory of your project.
   settings.
 */
 
-import createHomeTab from './home-tab';
-import createMenuTab from './menu-tab';
+import {createHomeTab} from './home-tab.js';
+import {createMenuTab} from './menu-tab.js';
 
 function nukePage() {
   document.querySelector('.content').innerHTML = "";
@@ -52,4 +52,8 @@ document.addEventListener('click', function(e) {
     nukePage();
     document.querySelector('.content').appendChild(createMenuTab());
   }
+  /*else if(e.target.innerHTML == "Contact") {
+    nukePage();
+    document.querySelector('.content').appendChild(createContentTab());
+  }*/
 });

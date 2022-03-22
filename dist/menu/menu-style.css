@@ -18,7 +18,7 @@ header, footer {
   margin-bottom: 30px;
 }
 
-.logo_header {
+.logo {
   position: relative;
   top: 12px;
   flex: 0 0 auto;
@@ -49,64 +49,8 @@ div.tabs:hover {
   margin: auto;
 }
 
-.intro {
-  display: flex;
-}
-
-.text_button {
-  display: grid;
-  grid-template-rows: 30% 45% 25%;
-  margin: 0 8px;
-}
-
-.grid-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tagline {
-  grid-row: 1 / 2;
-  font-size: 2.4rem;
-  display: block;
-  margin: 0;
-}
-
-.tagtext {
-  grid-row: 2 / 3;
-  font-size: 1.5rem;
-  font-weight: 200;
-  margin: 10px 0 0 0;
-}
-
-.response_button {
-  grid-row: 3 / 4;
-  font-size: 1.3rem;
-  color: rgb(110, 199, 2);
-  padding: 6px 20px;
-  border: 2px solid rgb(110, 199, 2);
-  border-radius: 10px;
-  background-color: #fff;
-}
-
-.response_button:hover {
-  border: 3px solid rgb(110, 199, 2);
-  font-weight: 500;
-}
-
-.logo {
-  width: 800px;
-  height: 107px;
-  margin: 100px 0 40px;
-}
-
 img {
   width: 100%;
-}
-
-.copy_text {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
 }
 
 .menu_img {
@@ -118,7 +62,7 @@ img {
   margin: 20px auto;
 }
 
-.menu_card {
+.card {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -142,27 +86,9 @@ img {
   font-weight: 200;
 }
 
-.menu_card > img {
+.card > img {
   width: 150px;
   margin: 25px;
-}
-
-.contact_img {
-  width: 400px;
-  margin: auto;
-}
-
-.contact {
-  margin: 20px auto;
-}
-
-.contact_card {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #ddd;
-  border-radius: 20px;
-  margin: 20px 100px;
 }
 
 .footer_text {

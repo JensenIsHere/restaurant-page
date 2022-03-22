@@ -1,4 +1,4 @@
-import {toHTML, headerCreator, footerCreator} from './global-functions'
+import {toHTML, headerCreator, footerCreator} from './global-functions.js'
 
 function bodyCreator() {
   let docFrag = document.createDocumentFragment();
@@ -71,14 +71,12 @@ function fillCopyText() {
   return copyText;
 }
 
-function createHomeTab() {
+export function createHomeTab() {
   let docFrag = document.createDocumentFragment();
-  
+
   docFrag.appendChild(headerCreator());
   docFrag.appendChild(bodyCreator());
   docFrag.appendChild(footerCreator());
   
   return docFrag;
 }
-
-export default createHomeTab;
